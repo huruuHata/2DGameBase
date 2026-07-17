@@ -40,14 +40,6 @@
 //Ｃ言語でのdefine、構造体などはこちらで宣言します。
 //-----------------------------------------------------------------------------
 
-constexpr int ROW = 12;
-constexpr int COL = 12;
-
-struct Field
-{
-	int map[ROW][COL];
-};
-
 //-----------------------------------------------------------------------------
 //ゲーム中で使用するテクスチャ、BGM、SE、フォントのパス付ファイル名を書きます。
 //-----------------------------------------------------------------------------
@@ -73,6 +65,12 @@ namespace KeyString
 	constexpr char* FILE_CLEAR_UI = "Resource\\Data\\Json\\UI\\ClearUI.json";
 	constexpr char* FILE_GAMEOVER_UI = "Resource\\Data\\Json\\UI\\GameoverUI.json";
 
+
+	//****************
+	// テクスチャ
+	//****************
+
+	constexpr char* TEXTURE_PLAYER = "Resource\\Texture\\Game\\Player\\TestPlayerChip.png";
 
 	constexpr char* FONT_GOTHIC100 = "100:ＭＳ ゴシック";
 }

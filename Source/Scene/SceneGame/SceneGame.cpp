@@ -36,7 +36,9 @@ SceneGame::~SceneGame()
 //=============================================================================
 void SceneGame::Start()
 {
+	m_setting.SceneResourceSetting(m_pEngine, SCENE_GAME);
 
+	m_player.Initialize();
 }
 
 //=============================================================================
@@ -44,7 +46,7 @@ void SceneGame::Start()
 //=============================================================================
 void SceneGame::Update()
 {
-
+	m_player.Update(m_pEngine);
 }
 
 //=============================================================================
@@ -53,6 +55,8 @@ void SceneGame::Update()
 void SceneGame::Draw()
 {
 	m_pEngine->SpriteBegin();
+
+	m_player.Draw(m_pEngine);
 
 	m_pEngine->SpriteEnd();
 }

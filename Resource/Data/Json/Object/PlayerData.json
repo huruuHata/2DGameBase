@@ -5,14 +5,19 @@
   },
 
   "Image": {
-    "Width": 0,
-    "Height": 0
+    "Width": 64,
+    "Height": 64
   },
 
    "Draw" :{
-    "Width": 0,
-    "Height": 0
+    "Width": 64,
+    "Height": 64
   },
 
-  "Texture": ""
+  "Texture": "Resource\\Texture\\Game\\Player\\TestPlayerChip.png",
+
+  "TextureNum": 0,
+  "ChipCol": 4,
+
+  "MoveSpeed": 5
 }

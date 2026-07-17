@@ -9,6 +9,8 @@
 #include "..\\..\\GameBase.h"
 
 #include "..\\Scene\\Scene.h"
+#include "..\\..\\Object\\Engine\\ResourceSetting\\ResourceSetting.h"
+#include "..\\..\\Object\\Player\\Player.h"
 
 using namespace std;
 
@@ -66,4 +68,7 @@ public:
 
 private:
 
+	ResourceSetting& m_setting = ResourceSetting::getInstance();
+
+	Player m_player;
 };

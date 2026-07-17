@@ -116,7 +116,7 @@ void ResourceSetting::GameSetting()
 {
 	m_textures =
 	{
-
+		TEXTURE_PLAYER,
 	};
 
 	//m_bgm = ;

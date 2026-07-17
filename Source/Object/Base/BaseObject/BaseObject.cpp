@@ -5,7 +5,7 @@
 
 namespace
 {
-	constexpr int CHIP_COL = 5;
+	
 }
 
 void BaseObject::Draw(Engine * pEngine)
@@ -14,8 +14,8 @@ void BaseObject::Draw(Engine * pEngine)
 
 	int x, y;
 
-	x = m_draw.texture_num % CHIP_COL * m_draw.image_width;
-	y = m_draw.texture_num / CHIP_COL * m_draw.image_height;
+	x = m_draw.texture_num % m_draw.chip_col * m_draw.image_width;
+	y = m_draw.texture_num / m_draw.chip_col *m_draw.image_height;
 	SetRect(&sour, x, y, x + m_draw.image_width, y + m_draw.image_height);
 
 	x = m_draw.position.x;

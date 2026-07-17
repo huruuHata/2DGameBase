@@ -18,6 +18,7 @@ public:
 		int draw_width;
 		int draw_height;
 		int texture_num;
+		int chip_col;
 		std::string filename;
 	};
 
