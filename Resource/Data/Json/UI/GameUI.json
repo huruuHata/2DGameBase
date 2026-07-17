@@ -1,20 +1,85 @@
 {
-  "Filename": "",
+  "White": {
+    "Filename": "Resource\\Texture\\Game\\UI\\TestUIWhite.png",
 
-  "Image": {
-    "Width": 0,
-    "Height": 0
+    "Image": {
+      "Width": 64,
+      "Height": 64
+    },
+
+    "Draw": {
+      "Width": 64,
+      "Height": 64
+    },
+
+    "Position": {
+      "x": 0,
+      "y": 0
+    },
+
+    "Alpha": 255
   },
 
-  "Draw": {
-    "Width": 0,
-    "Height": 0
+  "Green": {
+    "Filename": "Resource\\Texture\\Game\\UI\\TestUIGreen.png",
+
+    "Image": {
+      "Width": 64,
+      "Height": 64
+    },
+
+    "Draw": {
+      "Width": 64,
+      "Height": 64
+    },
+
+    "Position": {
+      "x": 0,
+      "y": 0
+    },
+
+    "Alpha": 255
   },
 
-  "Position": {
-    "x": 0,
-    "y": 0
+  "Blue": {
+    "Filename": "Resource\\Texture\\Game\\UI\\TestUIBlue.png",
+
+    "Image": {
+      "Width": 64,
+      "Height": 64
+    },
+
+    "Draw": {
+      "Width": 64,
+      "Height": 64
+    },
+
+    "Position": {
+      "x": 0,
+      "y": 0
+    },
+
+    "Alpha": 255
   },
 
-  "Alpha": 255
+  "Purple": {
+    "Filename": "Resource\\Texture\\Game\\UI\\TestUIPurple.png",
+
+    "Image": {
+      "Width": 64,
+      "Height": 64
+    },
+
+    "Draw": {
+      "Width": 64,
+      "Height": 64
+    },
+
+    "Position": {
+      "x": 0,
+      "y": 0
+    },
+
+    "Alpha": 255
+  }
 }

@@ -11,6 +11,7 @@
 #include "..\\Scene\\Scene.h"
 #include "..\\..\\Object\\Engine\\ResourceSetting\\ResourceSetting.h"
 #include "..\\..\\Object\\Player\\Player.h"
+#include "..\\..\\Object\\UI\\GameUI\\GameUI.h"
 
 using namespace std;
 
@@ -71,4 +72,5 @@ private:
 	ResourceSetting& m_setting = ResourceSetting::getInstance();
 
 	Player m_player;
+	GameUI m_game_ui;
 };

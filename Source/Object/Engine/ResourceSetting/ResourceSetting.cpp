@@ -117,6 +117,10 @@ void ResourceSetting::GameSetting()
 	m_textures =
 	{
 		TEXTURE_PLAYER,
+		TEXTURE_UI_WHITE,
+		TEXTURE_UI_GREEN,
+		TEXTURE_UI_BLUE,
+		TEXTURE_UI_PURPLE,
 	};
 
 	//m_bgm = ;

@@ -12,6 +12,8 @@ public:
 	void Update(Engine* pEngine);
 	void Draw(Engine* pEngine);
 
+	int GetColorNumber();
+
 private:
 
 	//適宜これより下はクラス分けしてください
@@ -22,7 +24,6 @@ private:
 		DOWN_KEY = 0x02,
 		LEFT_KEY = 0x04,
 		RIGHT_KEY = 0x08,
-		JUMP_KEY = 0x10,
 	};
 
 	enum PlayerColor

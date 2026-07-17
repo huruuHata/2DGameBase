@@ -71,6 +71,10 @@ namespace KeyString
 	//****************
 
 	constexpr char* TEXTURE_PLAYER = "Resource\\Texture\\Game\\Player\\TestPlayerChip.png";
+	constexpr char* TEXTURE_UI_WHITE = "Resource\\Texture\\Game\\UI\\TestUIWhite.png";
+	constexpr char* TEXTURE_UI_GREEN = "Resource\\Texture\\Game\\UI\\TestUIGreen.png";
+	constexpr char* TEXTURE_UI_BLUE = "Resource\\Texture\\Game\\UI\\TestUIBlue.png";
+	constexpr char* TEXTURE_UI_PURPLE = "Resource\\Texture\\Game\\UI\\TestUIPurple.png";
 
 	constexpr char* FONT_GOTHIC100 = "100:ＭＳ ゴシック";
 }

@@ -39,6 +39,7 @@ void SceneGame::Start()
 	m_setting.SceneResourceSetting(m_pEngine, SCENE_GAME);
 
 	m_player.Initialize();
+	m_game_ui.Initialize();
 }
 
 //=============================================================================
@@ -57,6 +58,7 @@ void SceneGame::Draw()
 	m_pEngine->SpriteBegin();
 
 	m_player.Draw(m_pEngine);
+	m_game_ui.Draw(m_pEngine, m_player.GetColorNumber());
 
 	m_pEngine->SpriteEnd();
 }

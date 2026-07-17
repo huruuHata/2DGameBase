@@ -38,6 +38,11 @@ void Player::Draw(Engine * pEngine)
 	BaseObject::Draw(pEngine);
 }
 
+int Player::GetColorNumber()
+{
+	return m_draw.texture_num;
+}
+
 //適宜これより下はクラス分けしてください
 
 void Player::KeyInput(Engine* pEngine)
@@ -53,9 +58,6 @@ void Player::KeyInput(Engine* pEngine)
 
 	if (pEngine->GetKeyState(DIK_A)) m_key_flag |= LEFT_KEY;
 	else						     m_key_flag &= ~LEFT_KEY;
-
-	if (pEngine->GetKeyState(DIK_SPACE)) m_key_flag |= JUMP_KEY;
-	else								 m_key_flag &= ~JUMP_KEY;
 }
 
 void Player::Move()
