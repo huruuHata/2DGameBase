@@ -21,10 +21,11 @@ void GameUI::Draw(Engine* pEngine, int color_num)
 {
 	switch (color_num)
 	{
-	case 0:	DrawUI(pEngine, m_ui_white); break;
-	case 1:	DrawUI(pEngine, m_ui_green); break;
-	case 2:	DrawUI(pEngine, m_ui_blue); break;
-    case 3:	DrawUI(pEngine, m_ui_purple); break;
+	case WHITE:	 DrawUI(pEngine, m_ui_white);  break;
+	case GREEN:	 DrawUI(pEngine, m_ui_green);  break;
+	case BLUE:	 DrawUI(pEngine, m_ui_blue);   break;
+    case PURPLE: DrawUI(pEngine, m_ui_purple); break;
+
 	default: break;
 	}
 }

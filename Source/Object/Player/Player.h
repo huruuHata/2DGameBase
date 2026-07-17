@@ -26,14 +26,6 @@ private:
 		RIGHT_KEY = 0x08,
 	};
 
-	enum PlayerColor
-	{
-		WHITE,
-		GREEN,
-		BLUE,
-		PURPLE,
-	};
-
 	void KeyInput(Engine* pEngine);
 	void Move();
 
