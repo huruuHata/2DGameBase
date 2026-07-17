@@ -133,14 +133,8 @@
     <Filter Include="Object\UI\GameoverUI">
       <UniqueIdentifier>{55bd4d89-fac3-4d20-94cc-97bd687513a3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Object\UI\ClearUI">
-      <UniqueIdentifier>{f5f7f0a1-947d-4b40-83c4-15412013a5c4}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Object\Player">
       <UniqueIdentifier>{d26c9970-ec79-4720-ab90-4f357d0baad5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Object\Block">
-      <UniqueIdentifier>{53d7a890-13c8-400c-8b18-ea0ebe78796d}</UniqueIdentifier>
     </Filter>
     <Filter Include="Object\Engine\ResourceSetting">
       <UniqueIdentifier>{aea63c54-abb9-4739-9ea0-5aebb5b4b2d5}</UniqueIdentifier>
@@ -153,6 +147,12 @@
     </Filter>
     <Filter Include="Object\Engine\GameSystem">
       <UniqueIdentifier>{89e24ec8-ef62-49d6-9609-45cff4561b04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Block">
+      <UniqueIdentifier>{53d7a890-13c8-400c-8b18-ea0ebe78796d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Block\ClearUI">
+      <UniqueIdentifier>{f5f7f0a1-947d-4b40-83c4-15412013a5c4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -346,7 +346,7 @@
       <Filter>Object\UI\GameoverUI</Filter>
     </ClCompile>
     <ClCompile Include="Source\Object\UI\ClearUI\ClearUI.cpp">
-      <Filter>Object\UI\ClearUI</Filter>
+      <Filter>Object\Block\ClearUI</Filter>
     </ClCompile>
     <ClCompile Include="Source\Object\Engine\ResourceSetting\ResourceSetting.cpp">
       <Filter>Object\Engine\ResourceSetting</Filter>
@@ -576,7 +576,7 @@
       <Filter>Object\UI\GameoverUI</Filter>
     </ClInclude>
     <ClInclude Include="Source\Object\UI\ClearUI\ClearUI.h">
-      <Filter>Object\UI\ClearUI</Filter>
+      <Filter>Object\Block\ClearUI</Filter>
     </ClInclude>
     <ClInclude Include="Source\Object\Engine\ResourceSetting\ResourceSetting.h">
       <Filter>Object\Engine\ResourceSetting</Filter>

@@ -3,13 +3,24 @@
 
 #include "BaseObject.h"
 
-void BaseObject::Draw(Engine * pEngine, const Vector2Int position, const DrawSet & draw)
+namespace
+{
+	constexpr int CHIP_COL = 5;
+}
+
+void BaseObject::Draw(Engine * pEngine)
 {
 	RECT sour, dest;
 
-	SetRect(&sour, draw.texture_num * draw.image_width, 0, draw.texture_num  * draw.draw_width + draw.draw_width, draw.draw_height);
+	int x, y;
 
-	SetRect(&dest, position.x, position.y, position.x + draw.draw_width, position.y + draw.draw_height);
+	x = m_draw.texture_num % CHIP_COL * m_draw.image_width;
+	y = m_draw.texture_num / CHIP_COL * m_draw.image_height;
+	SetRect(&sour, x, y, x + m_draw.image_width, y + m_draw.image_height);
 
-	pEngine->Blt(&dest, draw.filename, &sour);
+	x = m_draw.position.x;
+	y = m_draw.position.y;
+	SetRect(&dest, x, y, x + m_draw.draw_width, y + m_draw.draw_height);
+
+	pEngine->Blt(&dest, m_draw.filename, &sour);
 }

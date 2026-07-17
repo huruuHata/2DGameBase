@@ -1,4 +1,6 @@
 ﻿
+//オブジェクトの基底クラス 共通して使う描画と描画用の構造体を保有
+
 #pragma once
 
 #include "..\\..\\..\\GameBase.h"
@@ -8,19 +10,20 @@ class BaseObject
 {
 public:
 
-
-protected:
-
 	struct DrawSet
 	{
-		int texture_num;
+		Vector2Int position;
 		int image_width;
 		int image_height;
 		int draw_width;
 		int draw_height;
+		int texture_num;
 		std::string filename;
 	};
 
-	void Draw(Engine* pEngine, const Vector2Int position, const DrawSet& draw);
+	void Draw(Engine* pEngine);
 
+protected:
+
+	DrawSet m_draw;
 };
